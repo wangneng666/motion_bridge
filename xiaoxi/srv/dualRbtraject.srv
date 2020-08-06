@@ -1,0 +1,4 @@
+robotMotionTraject[] robotMotionTraject_list
+---
+bool is_success
+string info

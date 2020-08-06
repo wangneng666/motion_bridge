@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<launch>
+
+    <node pkg="motion_bridge" type="motion_bridge_exe" name="motion_bridge_hsr_left" output="screen" >
+    <param name="movegroup_name" type="str" value="arm0"/>
+    <!-- <param name="endLink_name" type="str" value="link6" /> -->
+     <remap from="motionBridgeStart" to="/hsr_left/motionBridgeStart" />
+     <remap from="moveToSiglePose" to="/hsr_left/moveToSiglePose" />
+     <remap from="moveToMultiPose" to="/hsr_left/moveToMultiPose" />
+     <remap from="moveLine" to="/hsr_left/moveLine" />
+     <remap from="SigleAixs" to="/hsr_left/SigleAixs" />
+     <remap from="test_server" to="/hsr_left/test_server" />
+    </node>
+
+    <node pkg="motion_bridge" type="motion_bridge_exe" name="motion_bridge_hrs_right" output="screen" >
+    <param name="movegroup_name" type="str" value="arm1"/>
+    <!-- <param name="endLink_name" type="str" value="R_link6" /> -->
+     <remap from="motionBridgeStart" to="/hsr_right/motionBridgeStart" />
+     <remap from="moveToSiglePose" to="/hsr_right/moveToSiglePose" />
+     <remap from="moveToMultiPose" to="/hsr_right/moveToMultiPose" />
+     <remap from="moveLine" to="/hsr_right/moveLine" />
+     <remap from="SigleAixs" to="/hsr_right/SigleAixs" />
+     <remap from="test_server" to="/hsr_right/test_server" />
+    </node>
+
+
+</launch>
+

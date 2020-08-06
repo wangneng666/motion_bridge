@@ -1,0 +1,6 @@
+string moveGroup_name
+uint16 index_axis
+float32 angle
+---
+bool is_success
+string info

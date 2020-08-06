@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<launch>
+
+        <node pkg="motion_bridge" type="motion_bridge_exe" name="motion_bridge" output="screen" >
+        <param name="movegroup_name" type="str" value="arm1"/>
+        <param name="endLink_name" type="str" value="link6" />
+        </node>
+
+</launch>
+

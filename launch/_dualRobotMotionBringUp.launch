@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<launch>
+
+<group ns="hsr_left">
+        <node pkg="motion_bridge" type="motion_bridge_exe" name="motion_bridge" output="screen" >
+        <param name="movegroup_name" type="str" value="arm0"/>
+        <param name="endLink_name" type="str" value="link6" />
+         <remap from="/hsr_left/move_group/cancel" to="/move_group/cancel" />
+         <remap from="/hsr_left/move_group/feedback" to="/move_group/feedback" />
+         <remap from="/hsr_left/move_group/goal" to="/move_group/goal" />
+         <remap from="/hsr_left/move_group/result" to="/move_group/result" />
+         <remap from="/hsr_left/move_group/status" to="/move_group/status" />
+        </node>
+</group>
+
+<!-- <group ns="hsr_right">
+        <node pkg="motion_bridge" type="motion_bridge_exe" name="motion_bridge" output="screen" >
+        <param name="movegroup_name" type="str" value="arm1"/>
+        <param name="endLink_name" type="str" value="link6" />
+         <remap from="/hsr_right/move_group/cancel" to="/move_group/cancel" />
+         <remap from="/hsr_right/move_group/feedback" to="/move_group/feedback" />
+         <remap from="/hsr_right/move_group/goal" to="/move_group/goal" />
+         <remap from="/hsr_right/move_group/result" to="/move_group/result" />
+         <remap from="/hsr_right/move_group/status" to="/move_group/status" />
+        </node>
+</group> -->
+
+</launch>
+

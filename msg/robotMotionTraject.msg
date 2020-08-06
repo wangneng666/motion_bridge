@@ -1,0 +1,3 @@
+string moveGroup_name
+trajectory_msgs/JointTrajectory robot_jointTra
+

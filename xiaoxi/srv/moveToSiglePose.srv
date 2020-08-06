@@ -1,0 +1,5 @@
+string moveGroup_name
+hirop_msgs/joints_angle pose_joints_angle
+---
+bool is_success
+string info
